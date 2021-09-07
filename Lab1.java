@@ -13,7 +13,7 @@ public class Lab1 {
 
         do {
             System.out.println("\t\t\t\t==================================================");
-            System.out.println("\t\t\t\t                Perfume Shop                      ");
+            System.out.println("\t\t\t\t                Perfume Store                      ");
             System.out.println("\t\t\t\t                     Menu                         ");
             System.out.println("\t\t\t\t1. Ordinary Perfume                               ");
             System.out.println("\t\t\t\t2. Elegant Perfume                                ");
@@ -27,7 +27,7 @@ public class Lab1 {
             if (select == 1) {
 
                 System.out.println("\t\t\t\t==================================================");
-                System.out.println("\t\t\t\t                 Perfume Shop                     ");
+                System.out.println("\t\t\t\t                 Perfume Store                     ");
                 System.out.println("\t\t\t\t               Ordinary Perfume                   ");
                 System.out.println("\t\t\t\tPrice/Promo:                                      ");
                 System.out.println("\t\t\t\t1 bottle                         Php165.00        ");
@@ -71,7 +71,7 @@ public class Lab1 {
             } else if (select == 2) {
 
                 System.out.println("\t\t\t\t==================================================");
-                System.out.println("\t\t\t\t                 Perfume Shop                     ");
+                System.out.println("\t\t\t\t                 Perfume Store                     ");
                 System.out.println("\t\t\t\t                Elegant Perfume                   ");
                 System.out.println("\t\t\t\tPrice/Promo:                                      ");
                 System.out.println("\t\t\t\t1 bottle                         Php250.00        ");
@@ -159,7 +159,7 @@ public class Lab1 {
                 System.out.println(
                         "\t\t\t\t================================================================================");
                 System.out.println(
-                        "\t\t\t\t                                   Perfume Shop                                      ");
+                        "\t\t\t\t                                   Perfume Store                                      ");
                 System.out.println(
                         "\t\t\t\t                                      Receipt                                        ");
                 System.out.println(
