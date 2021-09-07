@@ -5,9 +5,8 @@ public class Lab1 {
     public static Scanner input = new Scanner(System.in);
 
     public static int qty, select, yesNo, answer, ordinaryQty, elegantQty, totalQty;
-    public static double total, discount, payment;
-    static double ordinaryPrice, elegantPrice, totalOrdinary, totalElegant, finalTotal, change;
-    static String ordinaryPromo = "N/A", elegantPromo = "N/A";
+    public static double total, discount, payment, ordinaryPrice, elegantPrice, totalOrdinary, totalElegant, finalTotal, change;
+    public static String ordinaryPromo = "N/A", elegantPromo = "N/A";
 
     // order
     public static void order() {
@@ -45,7 +44,6 @@ public class Lab1 {
                 } while (ordinaryQty < 1);
 
                 // 1 bottle of ordinary perfume
-
                 if (ordinaryQty >= 1 && ordinaryQty <= 4) {
                     ordinaryPrice = 165.00;
                     ordinaryPromo = "N/A";
@@ -123,14 +121,17 @@ public class Lab1 {
             }
 
             // buy again
+            
             System.out.println("\t\t\t\t==================================================");
             System.out.println("\t\t\t\tDo you want to buy again?");
 
             // invalid inputs
             do {
-                System.out.println("\t\t\t\tPress 1 for Yes, Press 2 for No");
-                System.out.print("\t\t\t\tYour choice: ");
-                yesNo = input.nextInt();
+                System.out.println("\t\t\t\t1: Yes");
+                System.out.println("\t\t\t\t2: No");
+                System.out.print("\t\t\t\t: ");               
+                yesNo = input.nextInt();                
+                
             } while (yesNo != 1 && yesNo != 2);
 
             if (yesNo == 1) {
@@ -196,7 +197,7 @@ public class Lab1 {
                         "\t\t\t\t================================================================================");
 
             } else {
-                System.out.println("\t\t\t\tChoose between 1 and 2 only.");
+               System.out.println("\t\t\t\tChoose between 1 and 2 only.");
             }
             //RESTART
             System.out.println("\t\t\t\tWould you like to use the system again?");
@@ -204,9 +205,19 @@ public class Lab1 {
             System.out.println("\t\t\t\t2: No");
             System.out.print("\t\t\t\t:");
             answer = input.nextInt();
-            
+
+            //reset value
+            totalOrdinary = 0;
+            totalElegant = 0;
+            finalTotal = 0;
+            total = 0;
+            ordinaryQty = 0;
+            elegantQty = 0;
+
         } while (answer == 1);
         input.close();
+        System.exit(0);
+        
     }
     public static void main(String[] args) {
         order();
