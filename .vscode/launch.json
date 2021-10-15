@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ParadiseInfo",
+            "request": "launch",
+            "mainClass": "ParadiseInfo",
+            "projectName": "CS211 - Object-Oriented Programming_fa4dbfbd"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
